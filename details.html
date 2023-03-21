@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Chennai to Theni Bus Tickets</title>
+    <link rel="stylesheet" href="detailstyles.css" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="header">
+                <div class="right-corner">
+            <a href='bus.html'><h1>MyBus.Com</h1></a>
+        <img src="b.png"></div>
+            <div class="left_corner">
+                <i class="fa fa-solid fa-house-user" onclick="window.location.href='login.html'"></i>
+            </div>
+            </div>
+            <div class="second-header">
+                <form method="post" name="search-bus">
+                    <div class="form-container">
+    
+                    <div class="form-group">
+                        <b>From</b>
+                    <input type="text" name="start" id="start" placeholder="Chennai" required></div>
+    
+                    <div class="form-group"> 
+                    <b>To</b>
+                    <input type="text" name="dest" id="dest" placeholder="Theni" required></div>
+    
+                    <div class="form-group">
+                   <b>Date</b>
+                    <input type="date" name="date" id="date" placeholder="03/02/23" required></div>
+                    <div class="button-group">
+                    <button type="submit" onclick="window.location.href='details.html'" class="but_button">Find Buses</button></div></div>
+                </form>
+            </div>
+            
+            
+            <div class="container">
+                <div id="pop-up-box" class="overlay">
+                    <a class="close" href="#">&times;</a>
+                    <div id="seat">
+                       
+                    <div id="block" style="display:flex">
+                    <div class="lower">
+                       <p >Lower</p>
+                        <p style="padding-left:100px">&#128110;</p>
+                    <div class="single-seat">
+                        <ul>
+                            <li><input type="checkbox" class="sel" id="lb1" ><label for="lb1">LB1</label></li>
+                            <li><input type="checkbox" class="sel" id="lb2"><label for="lb2" style="background: #e469a7">LB2</label></li>
+                            <li><input type="checkbox" class="sel" id="lb3"><label for="lb3" style="background: #e469a7">LB3</label></li>
+                            <li><input type="checkbox" class="sel" id="lb4"><label for="lb4" style="background:  #2e9edf">LB4</label></li>
+                            <li><input type="checkbox" class="sel" id="lb5" ><label for="lb5">LB5</label></li>
+                        </ul>
+                    </div>
+                    <div class="double-seat">
+                        <div class="seat-row">
+                            <li><input type="checkbox" class="sel" id="lb6"><label for="lb6" style="background: #e469a7">LB6</label></li>
+                            <li><input type="checkbox" class="sel" id="lb7" ><label for="lb7" style="border:1px solid  #e469a7;
+                                background: #9ca197;">LB7</label></li>
+                        </div>
+                        <div class="seat-row">
+                            <li><input type="checkbox" class="sel" id="lb8" ><label for="lb8">LB8</label></li>
+                            <li><input type="checkbox" class="sel" id="lb9" ><label for="lb9" >LB9</label></li>
+                        </div>
+                        <div class="seat-row">
+                            <li><input type="checkbox" class="sel" id="lb10"><label for="lb10" style="background:  #2e9edf">LB10</label></li>
+                            <li><input type="checkbox" class="sel" id="lb11"><label for="lb11" style="background:  #2e9edf">LB11</label></li>
+                        </div>
+                        <div class="seat-row">
+                            <li><input type="checkbox" class="sel" id="lb12" ><label for="lb12">LB12</label></li>
+                            <li><input type="checkbox" class="sel" id="lb13" ><label for="lb13">LB13</label></li>
+                        </div>
+                        <div class="seat-row">
+                            <li><input type="checkbox" class="sel" id="lb14"><label for="lb14">LB14</label></li>
+                            <li><input type="checkbox" class="sel" id="lb15" ><label for="lb15">LB15</label></li>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="upper">
+                       
+                        <div class="single-seat">
+                            <ul>
+                                <li><input type="checkbox" class="sel" id="ub1" ><label for="ub1">UB1</label></li>
+                                <li><input type="checkbox" class="sel" id="ub2" ><label for="ub2">UB2</label></li>
+                                <li><input type="checkbox" class="sel" id="ub3" ><label for="ub3" style="background: #e469a7">UB3</label></li>
+                                <li><input type="checkbox" class="sel" id="ub4" ><label for="ub4">UB4</label></li>
+                                <li><input type="checkbox" class="sel" id="ub5" ><label for="ub5">UB5</label></li>
+                            </ul>
+                        </div>
+                        <div class="double-seat">
+                            <div class="seat-row">
+                                <li><input type="checkbox" class="sel" id="ub6" ><label for="ub6">UB6</label></li>
+                            <li><input type="checkbox" class="sel" id="ub7" ><label for="ub7">UB7</label></li>
+                            </div>
+                            <div class="seat-row">
+                                <li><input type="checkbox" class="sel" id="ub8" ><label for="ub8">UB8</label></li>
+                            <li><input type="checkbox" class="sel" id="ub9" ><label for="ub9">UB9</label></li>
+                            </div>
+                            <div class="seat-row">
+                                <li><input type="checkbox" class="sel" id="ub10" ><label for="ub10" style="border:1px solid  #e469a7;
+                                    background: #9ca197;">UB10</label></li>
+                                <li><input type="checkbox" class="sel" id="ub11"><label for="ub11" style="background: #e469a7">UB11</label></li>
+                            </div>
+                            <div class="seat-row">
+                                <li><input type="checkbox" class="sel" id="ub12"><label for="ub12" style="background:  #2e9edf">UB12</label></li>
+                                <li><input type="checkbox" class="sel" id="ub13"><label for="ub13" style="background:  #2e9edf">UB13</label></li>
+                            </div>
+                            <div class="seat-row">
+                                <li><input type="checkbox" class="sel" id="ub14" ><label for="ub14">UB14</label></li>
+                                <li><input type="checkbox" class="sel" id="ub15" ><label for="ub15">UB15</label></li>
+                            </div>
+                        </div>
+                        <p>Upper</p>
+                    </div></div>
+                    <div class="ref">
+                        <div >
+                        <li><input type="checkbox" id="avai"><label for="avai" style="background: #9ca197">available</label></li>
+                        <li><input type="checkbox" id="fem_bo" ><label for="fem_bo" style="background: #e469a7">booked by Female</label></li>
+                        <li><input type="checkbox" id="mal_bo"><label for="mal_bo"  style="background:  #2e9edf">booked by Male</label></li>
+                        </div>
+                        <div>
+                        <li><input type="checkbox" id="fem_av"><label for="fem_av"  style="border:1px solid  #e469a7;
+                            background: #9ca197;">available for female</label></li>
+                        <li><input type="checkbox" id="mal_av"><label for="mal_av"  style="border:1px solid  #2e9edf;
+                            background: #9ca197;">available for male</label></li>
+                        <li><input type="checkbox" id="sel"><label for="sel"  style="background: #e70a0a">selected</label></li>
+                            </div>
+                </div>
+                <button type="submit" onclick="passengerForm()" class="booknow" id="pay">Pay</button>
+                    </div>
+                    <div id="pass-form" >
+                    <form id="passenger-form" method="post" >
+                        <div class="pass-1">
+                            <b>Passenger</b><br>
+                         
+                        <input type="text" name="Passenger-1 name" id="pass-1-name" placeholder="Name" required><br>
+                       <br>
+                        <input type="number" name="age-pass-1" id="pass-1-age" placeholder="Age" required><br>
+                        <br>
+                        <b>Gender</b><br>
+                        <input type="radio" name="gender-pass-1" id="female-1" value="Female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="gender-pass-1" id="male-1" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender-pass-1" id="uni-sex-1" value="Unisex">
+                        <label for="not-int">Unisex</label><br><br>
+                        <input type="number" name="mobile-pass-1" id="pass-1-mobile" placeholder="Mobile number" required><br>
+                        <input type="email" name="email-pass-1" id="pass-1-email" placeholder="Mail-ID" required><br>
+                        </div>
+                        <div class="pass-2">
+                            <b>Passenger-2</b><br>
+                            
+                        <input type="text" name="Passenger-2 name" id="pass-2-name" placeholder="Name" required><br>
+                        <br>
+                        <input type="number" name="age-pass-2" id="pass-2-age" placeholder="Age" required><br>
+                        <br>
+                        <b>Gender</b><br>
+                        <input type="radio" name="gender-pass-2" id="female-2" value="Female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="gender-pass-2" id="male-2" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender-pass-2" id="uni-sex-2" value="Unisex">
+                        <label for="not-int">Unisex</label><br><br>
+                        <input type="number" name="mobile-pass-2" id="pass-2-mobile" placeholder="Mobile number" required><br>
+                        <input type="email" name="email-pass-2" id="pass-2-email" placeholder="Mail-ID" required><br>
+                        </div>
+                       
+                        </form>
+                
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="filters">
+                        <h3>Filters</h3>
+                            <input type="checkbox" id="livetracking" name="liveTracking" >
+                            <label for="livetracking">Live-Tracking</label><br>
+                            <input type="checkbox" id="primobus" name="primobus" >
+                            <label for="primobus">Primo-Bus</label>
+                    </div>
+                    <div class="filters">
+                        <h3>Departure Time</h3>
+                        <input type="time" name="dep-time" id="dep-time" >
+                    </div>
+                    <div class="filters">
+                        <h3>Bus-Types</h3>
+                        <input type="checkbox" id="seater" name="seater">
+                        <label for="seater">Seater</label><br>
+                        <input type="checkbox" id="sleeper" name="sleeper" >
+                        <label for="sleeper">Sleeper</label><br>
+                        <input type="checkbox" id="ac" name="ac" >
+                        <label for="ac">AC</label><br>
+                        <input type="checkbox" id="non-ac" name="non-ac" >
+                        <label for="non-ac">Non-AC</label>
+                    </div>
+                    <div class="filters">
+                        <h3>Boarding Point</h3>
+                        <input type="text" name="board-pnt" id="board-pnt">
+                        <h3>Dropping Point</h3>
+                        <input type="text" name="drop-pnt" id="drop-pnt">
+                    </div>
+                    <div class="filters">
+                        <h3>Operators</h3>
+                        <input type="text" name="operator" id="operator">
+                    </div>
+                    <div class="filters">
+                        <h3>Amenities</h3>
+                        <input type="checkbox" id="charge" name="charge">
+                        <label for="charge">Charging Point</label><br>
+                        <input type="checkbox" id="bedsheet" name="bedsheet" >
+                        <label for="bedsheet">Bed sheet</label><br>
+                        <input type="checkbox" id="tv" name="tv" >
+                        <label for="tv">Personal TV</label><br>
+                        <input type="checkbox" id="emg-num" name="emg-num" >
+                        <label for="emg-num">Emergency Number</label><br>
+                        <input type="checkbox" id="wifi" name="wifi">
+                        <label for="wifi">Wifi</label><br>
+                        <input type="checkbox" id="w-bottle" name="w-bottle" >
+                        <label for="w-bottle">Water bottle</label><br>
+                        <input type="checkbox" id="rest-pnt" name="rest-pnt" >
+                        <label for="rest-pnt">Rest point</label><br>
+                        <input type="checkbox" id="toilet" name="toilet" >
+                        <label for="toilet">Toilet</label>
+                    </div>
+                </div>
+               
+                <div class="bus">
+                <div class="bus-column">
+                    <div class="name-row">
+                        <b>Thirumal Alagu Travels</b>
+                        <div class="rating"><i class="fa fa-solid fa-award"></i>
+                            <p>4.5 Rating</p></div>
+                    </div>
+                    <hr>
+                    <div class="detail">
+                        <div class="first-column">
+                    <div class="bus-detail">
+                        <p style="color: coral;">AC sleeper(1+2)</p>
+                        <div><i class="fa fa-solid fa-chair"></i>
+                            <p>11 seats</p></div>
+                        <p>8hr46mins</p>
+                    </div>
+                    <div class="bus-time">
+                        <div>
+                        <i class="fa fa-regular fa-clock"></i>
+                        <p>21.00</p></div>
+                        <div><i class="fa fa-regular fa-clock"></i>
+                        <p>05.46</p></div>
+                    </div>
+                    <div class="extra-info">
+                        <p>
+                            Live Tracking
+                        </p>
+                        <div class="drop-down">
+                            <p>Amenities</p>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bolt"></i>
+                                <p>Charging point</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-film"></i>
+                                <p>Personal TV</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bed"></i>
+                                <p>Bed Sheet</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-mobile"></i>
+                                <p>Emergency number</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        </div>
+                        <div  class="second-column">
+                        <div class="price">
+                            <b>INR 1453</b>
+                        </div>
+                        <div class="bookinfo">
+                            <a href="#pop-up-box"><button type="button"  onclick="First()" class="booknow" id ="book">Book Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bus-column">
+                    <div class="name-row">
+                        <b>SRS Travels</b>
+                        <div class="rating"><i class="fa fa-solid fa-award"></i>
+                            <p>4.8 Rating</p></div>
+                    </div>
+                    <hr>
+                    <div class="detail">
+                        <div class="first-column">
+                    <div class="bus-detail">
+                        <p style="color: coral;">AC sleeper(1+2)</p>
+                        <div><i class="fa fa-solid fa-chair"></i>
+                            <p>17 seats</p></div>
+                        <p>8hr05mins</p>
+                    </div>
+                    <div class="bus-time">
+                        <div>
+                            <i class="fa fa-regular fa-clock"></i>
+                            <p>20.00</p></div>
+                            <div><i class="fa fa-regular fa-clock"></i>
+                            <p>04.05</p></div>
+                    </div>
+                    <div class="extra-info">
+                        <p>
+                            Live Tracking
+                        </p>
+                        <div class="drop-down">
+                            <p>Amenities</p>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bolt"></i>
+                                <p>Charging point</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-film"></i>
+                                <p>Personal TV</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bed"></i>
+                                <p>Bed Sheet</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-mobile"></i>
+                                <p>Emergency number</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        </div>
+                        <div  class="second-column">
+                        <div class="price">
+                            <b>INR 1853</b>
+                        </div>
+                        <div class="bookinfo">
+                            <a href="#pop-up-box"><button type="button"  class="booknow" id ="book">Book Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bus-column">
+                    <div class="name-row">
+                        <b>Vignesh TAT</b>
+                        <div class="rating"><i class="fa fa-solid fa-award"></i>
+                            <p>4.6 Rating</p></div>
+                    </div>
+                    <hr>
+                    <div class="detail">
+                        <div class="first-column">
+                    <div class="bus-detail">
+                        <p style="color: coral;">AC sleeper(1+2)</p>
+                        <div><i class="fa fa-solid fa-chair"></i>
+                            <p>30 seats</p></div>
+                        <p>9hr06mins</p>
+                    </div>
+                    <div class="bus-time">
+                        <div>
+                            <i class="fa fa-regular fa-clock"></i>
+                            <p>20.30</p></div>
+                            <div><i class="fa fa-regular fa-clock"></i>
+                            <p>05.36</p></div>
+                    </div>
+                    <div class="extra-info">
+                        <p>
+                            Live Tracking
+                        </p>
+                        <div class="drop-down">
+                            <p>Amenities</p>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bolt"></i>
+                                <p>Charging point</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-film"></i>
+                                <p>Personal TV</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bed"></i>
+                                <p>Bed Sheet</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-mobile"></i>
+                                <p>Emergency number</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        </div>
+                        <div  class="second-column">
+                        <div class="price">
+                            <b>INR 1350</b>
+                        </div>
+                        <div class="bookinfo">
+                            <a href="#pop-up-box"><button type="button"  class="booknow" id ="book">Book Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bus-column">
+                    <div class="name-row">
+                        <b>Thirumal Alagu Travels</b>
+                        <div class="rating"><i class="fa fa-solid fa-award"></i>
+                            <p>4.6 Rating</p></div>
+                    </div>
+                    <hr>
+                    <div class="detail">
+                        <div class="first-column">
+                    <div class="bus-detail">
+                        <p style="color: coral;">AC sleeper(1+2)</p>
+                        <div><i class="fa fa-solid fa-chair"></i>
+                        <p>29 seats</p></div>
+                        <p>8hr40mins</p>
+                    </div>
+                    <div class="bus-time">
+                        <div>
+                            <i class="fa fa-regular fa-clock"></i>
+                            <p>21.45</p></div>
+                            <div><i class="fa fa-regular fa-clock"></i>
+                            <p>05.25</p></div>
+                    </div>
+                    <div class="extra-info">
+                        <p>
+                            Live Tracking
+                        </p>
+                        <div class="drop-down">
+                            <p>Amenities</p>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bolt"></i>
+                                <p>Charging point</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-film"></i>
+                                <p>Personal TV</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bed"></i>
+                                <p>Bed Sheet</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-mobile"></i>
+                                <p>Emergency number</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        </div>
+                        <div  class="second-column">
+                        <div class="price">
+                            <b>INR 983</b>
+                        </div>
+                        <div class="bookinfo">
+                            <a href="#pop-up-box"><button type="button"  class="booknow" id ="book">Book Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bus-column">
+                    <div class="name-row">
+                        <b>MJT Travels</b>
+                        <div class="rating"><i class="fa fa-solid fa-award"></i>
+                            <p>4.7 Rating</p></div>
+                    </div>
+                    <hr>
+                    <div class="detail">
+                        <div class="first-column">
+                    <div class="bus-detail">
+                        <p style="color: coral;">AC sleeper(1+2)</p>
+                        <div><i class="fa fa-solid fa-chair"></i>
+                        <p>09 seats</p></div>
+                        <p>8hr00mins</p>
+                    </div>
+                    <div class="bus-time">
+                        <div>
+                            <i class="fa fa-regular fa-clock"></i>
+                            <p>21.05</p></div>
+                            <div><i class="fa fa-regular fa-clock"></i>
+                            <p>05.05</p></div>
+                    </div>
+                    <div class="extra-info">
+                        <p>
+                            Live Tracking
+                        </p>
+                        <div class="drop-down">
+                            <p>Amenities</p>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bolt"></i>
+                                <p>Charging point</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-film"></i>
+                                <p>Personal TV</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bed"></i>
+                                <p>Bed Sheet</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-mobile"></i>
+                                <p>Emergency number</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        </div>
+                        <div  class="second-column">
+                        <div class="price">
+                            <b>INR 1983</b>
+                        </div>
+                        <div class="bookinfo">
+                            <a href="#pop-up-box"><button type="button"  class="booknow" id ="book">Book Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bus-column">
+                    <div class="name-row">
+                        <b>Kallada</b>
+                        <div class="rating"><i class="fa fa-solid fa-award"></i>
+                            <p>4.9 Rating</p></div>
+                    </div>
+                    <hr>
+                    <div class="detail">
+                        <div class="first-column">
+                    <div class="bus-detail">
+                        <p style="color: coral;">AC sleeper(1+2)</p>
+                        <div><i class="fa fa-solid fa-chair"></i>
+                        <p>03 seats</p></div>
+                        <p>8hr00mins</p>
+                    </div>
+                    <div class="bus-time">
+                        <div>
+                            <i class="fa fa-regular fa-clock"></i>
+                            <p>20.45</p></div>
+                            <div><i class="fa fa-regular fa-clock"></i>
+                            <p>04.45</p></div>
+                    </div>
+                    <div class="extra-info">
+                        <p>
+                            Live Tracking
+                        </p>
+                        <div class="drop-down">
+                            <p>Amenities</p>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bolt"></i>
+                                <p>Charging point</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-film"></i>
+                                <p>Personal TV</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-bed"></i>
+                                <p>Bed Sheet</p>
+                            </div>
+                            <div class="dropdown-content">
+                                <i class="fa fa-solid fa-mobile"></i>
+                                <p>Emergency number</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        </div>
+                        <div  class="second-column">
+                        <div class="price">
+                            <b>INR 1283</b>
+                        </div>
+                        <div class="bookinfo">
+                            <a href="#pop-up-box"><button type="button"  class="booknow" id ="book">Book Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bus-column" id="no-result">
+                    <p>&#128546;</p>
+                    <p>No results found!</p>
+                </div>
+
+                </div>
+                
+            </div>
+            
+            <div class="footer">
+                <div class="footer-content">
+                    <a href=""><p>About Us</p></a>
+                    <a href=""><p>Contact Us</p></a>
+                    <a href=""><p>Support</p></a>
+                </div>
+                <div class="footer-content">
+                    <a href="terms.html"><p>Terms and conditions</p></a>
+                    <a href="privacy.html"><p>Privacy Policy</p></a>
+                    <a href=""><p>FAQ</p></a>
+                </div>
+                <div class="footer-content">
+                    <p>Follow us on</p>
+                    <i class="fa fa-solid fa-envelope"></i>
+                    <i class="fa fa-solid fa-camera-retro"></i>
+                    <i class="fa fa-solid fa-thumbs-up"></i>
+                </div>
+            </div>
+            
+        </div>
+        <script src="detail.js"></script>
+    </body>
+</html>

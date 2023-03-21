@@ -1,0 +1,125 @@
+body{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    background-color:  #e9fdfc;
+    overflow:auto;
+}
+.main{
+    margin:auto;
+    width:max-content;
+    height:750px;
+
+}
+.header{
+    display: flex;
+    position: sticky !important;;
+    width: 100%;
+    height: 66px;
+    top: 0px;
+    align-items: center ;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px grey;
+}
+.header a{
+    text-decoration: none;
+}
+.back{
+	background-image: url(image.jpg);
+	width:100%;
+	height:450px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 866px;
+
+}
+.right-corner{
+    position: fixed;
+    margin-top: 20px;
+    display: contents;
+}
+img{
+    width:75px;
+    height:58px;
+}
+h1{
+    font-family:sans-serif;
+    font-size: 50px;
+    color:#c31432;
+    font-variant: small-caps;
+    text-align: left;
+    margin-top: 23px;
+    margin-left:100px;
+}
+.main .container{
+    text-align: center;
+    margin-top: 28%;
+    box-sizing: content-box;
+    background-color: rgb(255 255 255 / 84%);
+    border-radius: 30px;
+    display: grid;
+    border: 1px solid gray;
+}
+hr{
+    width:100%;
+    height:1px;
+    color:white
+}
+.but_button{
+    width: fit-content;
+    border-radius: 50px;
+    font-family: raleway;
+    font-size: 25px;
+    background-color: #c31432;
+    color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 40%;
+}
+
+input{
+    width:300px;
+    margin-left: 30px;
+    height:auto;
+    background-color: rgb(121 125 150 / 0%);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #060606;
+    border-bottom-style: solid;
+    color:rgb(10, 10, 10);
+}
+::placeholder{
+    color:black !important;
+}
+h2{
+    margin:0%;
+    padding-top: 20px;
+    font-family: raleway;
+    font-size: 30px;
+    color:#c31432;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+p{
+    margin-top:20px;
+    margin-bottom:0;
+    color:hsl(0, 0%, 1%);
+    font-family: raleway;
+    font-size: 20px;
+}
+.form-group{
+    width:max-content;
+    height:max-content;
+    display: flex;
+    margin:10px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+a{
+    color:#070707;
+    text-align: center;
+    margin-top: 10px;
+}
